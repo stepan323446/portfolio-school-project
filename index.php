@@ -12,13 +12,17 @@ define('DATA_PATH', BASE_PATH . '/app/data');
 define('ASSETS_PATH', '/assets');
 
 require BASE_PATH . '/functions.php';
+require BASE_PATH . '/config.php';
 
-$requestUri = strtok($_SERVER['REQUEST_URI'], '?');
-date_default_timezone_set('Europe/Belgrade');
+
+date_default_timezone_set(SERVER_TIMEZONE);
 
 // Router
+$requestUri = strtok($_SERVER['REQUEST_URI'], '?');
+$requestUri = rtrim($requestUri, '/');
+
 switch ($requestUri) {
-    case '/':
+    case '':
         require CONTROLLER_PATH . '/HomeController.php';
         $controller = new HomeController();
         $controller->index(); 

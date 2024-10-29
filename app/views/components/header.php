@@ -38,13 +38,13 @@ include(INCLUDES_PATH . "/header_nav.php");
                 <span class="vertical-divider"></span>
                 <ul class="header__external-links">
                     <li>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/stepan-turitsin-009354243/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/stepan323446" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://t.me/SteveDekart" target="_blank" rel="nofollow"><i class="fa-brands fa-telegram"></i></a>
                     </li>
                 </ul>
             </div>

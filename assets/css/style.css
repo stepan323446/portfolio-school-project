@@ -21,13 +21,15 @@ body {
     min-height: calc(100vh - 120px);
     padding-top: 120px;
 }
-a {
+a,
+a i {
     color: var(--hyperlink-color);
     text-decoration: none;
 
     transition: 0.15s ease;
 }
-a:hover {
+a:hover,
+a:hover i {
     color: var(--active-text-color);
 }
 .btn {
@@ -119,8 +121,8 @@ h1 {
     font-size: 55px;
 }
 .text-content {
-    font-size: 26px;
-    line-height: 48px;
+    font-size: 22px;
+    line-height: 38px;
 }
 .text-content b {
     color: var(--active-text-color);
@@ -195,6 +197,11 @@ h1 {
     color: var(--active-text-color);
     font-weight: 500;
 }
+
+.favorite-pages {
+    --background-color: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(17,17,17,1) 57%, rgba(31,80,80,1) 100%);
+    --hyperlink-color: #5AF1D2;
+}
 .favorites-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -208,10 +215,26 @@ h1 {
 }
 .fav-website__header {
     display: flex;
+    margin-bottom: 25px;
 }
 .fav-website__header .icon {
     width: 46px;
     height: 46px;
+    margin-right: 17px;
+}
+.fav-website__header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.fav-website__header a {
+    color: var(--active-text-color);
+    font-size: 14px;
+    font-weight: 300;
+}
+.fav-website__info {
+    font-size: 20px;
+    line-height: 24px;
 }
 
 footer {

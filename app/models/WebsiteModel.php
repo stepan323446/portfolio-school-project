@@ -30,7 +30,7 @@ class WebsiteModel extends Model {
                 </div>
                 <div class="fav-website__header__text">
                     <h3><?php echo $this->name; ?></h3>
-                    <a href="<?php echo $this->hyperlink; ?>"><?php echo $this->hyperlink; ?></a>
+                    <a href="<?php echo $this->hyperlink; ?>" target="_blank" rel="nofollow"><?php echo $this->hyperlink; ?></a>
                 </div>
             </div>
             <div class="fav-website__info">
