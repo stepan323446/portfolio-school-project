@@ -1,5 +1,7 @@
 <?php
+use App\Controllers\FavoriteController;
 use App\Controllers\HomeController;
+use App\Controllers\NotFoundController;
 
 define('BASE_PATH', __DIR__);
 define('VIEW_PATH', BASE_PATH . '/app/views');
@@ -7,11 +9,12 @@ define('MODEL_PATH', BASE_PATH . '/app/models');
 define('CONTROLLER_PATH', BASE_PATH . '/app/controllers');
 define('INCLUDES_PATH', BASE_PATH . '/app/includes');
 define('DATA_PATH', BASE_PATH . '/app/data');
-define('ASSETS_PATH', BASE_PATH . '/assets');
+define('ASSETS_PATH', '/assets');
 
 require BASE_PATH . '/functions.php';
 
 $requestUri = strtok($_SERVER['REQUEST_URI'], '?');
+date_default_timezone_set('Europe/Belgrade');
 
 // Router
 switch ($requestUri) {
@@ -20,9 +23,15 @@ switch ($requestUri) {
         $controller = new HomeController();
         $controller->index(); 
         break;
+    case '/favorites':
+        require CONTROLLER_PATH . '/FavoritePagesController.php';
+        $controller = new FavoriteController();
+        $controller->index(); 
+        break;
     default:
-        http_response_code(404);
-        echo "404 Not Found";
+        require CONTROLLER_PATH . '/NotFoundController.php';
+        $controller = new NotFoundController();
+        $controller->index(); 
         break;
 }
 ?>

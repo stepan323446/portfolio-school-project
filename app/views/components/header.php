@@ -28,7 +28,7 @@ include(INCLUDES_PATH . "/header_nav.php");
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>
+<body class="<?php echo $body_class ?>">
     <header class="header">
         <div class="container">
             <div class="header-inner">
