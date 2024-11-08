@@ -8,6 +8,7 @@ Here is a collection of all my favorite pages that I visit frequently and rely o
     <div class="container">
         <section class="page-header">
             <span class="page-header__effect"></span>
+            <span class="page-header__effect page-header__effect-2"></span>
             <h1>Favorite pages</h1>
 
             <div class="page-description">
