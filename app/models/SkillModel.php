@@ -8,7 +8,7 @@ class SkillModel extends Model {
     public $icon_url;
     public $category_name;
 
-    public function __construct($name, $icon_url, $category_name) {
+    public function __construct($name, $icon_url, $category_name = "Other") {
         $this->name = $name;
         $this->icon_url = $icon_url;
         $this->category_name = $category_name;

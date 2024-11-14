@@ -320,6 +320,7 @@ body.projects {
     border: 1px solid var(--default-text);
     border-radius: 20px;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 .project-thumbnail {
     width: 270px;
@@ -356,6 +357,7 @@ body.projects {
 }
 .project-skills .skill-item:not(:last-child) {
     margin-right: 20px;
+    margin-bottom: 16px;
 }
 .skill-item {
     display: inline-flex;
