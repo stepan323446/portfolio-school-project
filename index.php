@@ -1,4 +1,6 @@
 <?php
+use App\Controllers\ContactController;
+use App\Controllers\EducationController;
 use App\Controllers\FavoriteController;
 use App\Controllers\HomeController;
 use App\Controllers\NotFoundController;
@@ -40,7 +42,19 @@ switch ($requestUri) {
         $controller = new ProjectsController();
         $controller->index();
         break;
-        
+
+    case '/education':
+        require CONTROLLER_PATH . '/EducationController.php';
+        $controller = new EducationController();
+        $controller->index();
+        break;
+
+    case '/contacts':
+        require CONTROLLER_PATH . '/ContactController.php';
+        $controller = new ContactController();
+        $controller->index();
+        break;
+
     default:
         require CONTROLLER_PATH . '/NotFoundController.php';
         $controller = new NotFoundController();

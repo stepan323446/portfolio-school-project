@@ -7,7 +7,7 @@
 <div class="container homepage">
     <div class="homepage-info">
         <h1>Hi, I'm Stepan</h1>
-        <h2 class="text-typing">I'm web developer <span class="cursor">|</span></h2>
+        <h2 class="text-typing">I'm a <span id="typing">web developer</span> <span class="cursor">|</span></h2>
 
         <div class="homepage-info__text text-content">
             Software developer with experience in <b>web development</b> and building <b>cross-platform applications</b>. I enjoy creating useful tools and applications that improve everyday life.
@@ -23,4 +23,4 @@
     </div>
 </div>
 
-<?php get_footer() ?>
+<?php get_footer(array("typing.js", "home.js")) ?>

@@ -57,7 +57,7 @@ $websites = array(
     new WebsiteModel(
         "Google", 
         "It's not just a search engine - it's a whole ecosystem of many services. I mostly use this particular search engine.", 
-        WEBSITE_ICONS . "/github.png",
+        WEBSITE_ICONS . "/google.png",
         "https://www.google.com/"),
 
     new WebsiteModel(
@@ -113,5 +113,23 @@ $websites = array(
         "A giant library of all kinds of icons for your projects, both free and paid. I use it very often.", 
         WEBSITE_ICONS . "/font-awesome.png",
         "https://fontawesome.com"),
+
+    new WebsiteModel(
+        "To Do", 
+        "Microsoft To Do is a cloud-based task management application. It allows users to manage their tasks from a smartphone, tablet and computer.", 
+        WEBSITE_ICONS . "/to-do.png",
+        "https://to-do.office.com/tasks/"),
+
+    new WebsiteModel(
+        "Stripe", 
+        "Stripe is an online payment processing platform. Extremely convenient integration of the payment system on any website. Good API and high-quality technical support", 
+        WEBSITE_ICONS . "/stripe.png",
+        "https://stripe.com/"),
+
+    new WebsiteModel(
+        "Regex101", 
+        "A great site for checking regular expressions", 
+        WEBSITE_ICONS . "/regex.png",
+        "https://regex101.com/"),
 )
 ?>

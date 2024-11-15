@@ -23,17 +23,17 @@ class WebsiteModel extends Model {
 
     public function create_element() {
         ?>
-        <div class="fav-website">
-            <div class="fav-website__header">
+        <div class="fav-website model-item">
+            <div class="model-item__header">
                 <div class="icon image image-cover">
                     <img src="<?php echo $this->icon_url; ?>" alt="">
                 </div>
-                <div class="fav-website__header__text">
+                <div class="model-item__header__text">
                     <h3><?php echo $this->name; ?></h3>
                     <a href="<?php echo $this->hyperlink; ?>" target="_blank" rel="nofollow"><?php echo $this->hyperlink; ?></a>
                 </div>
             </div>
-            <div class="fav-website__info">
+            <div class="model-item__info">
                 <?php echo $this->description ?>
             </div>
         </div>
