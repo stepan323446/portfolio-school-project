@@ -26,7 +26,17 @@
             </section>
         </div>
         <div class="contact-form">
-            <form action="post">
+            <form action="#" method="post">
+                <?php if($sent_status == 'sent'): ?>
+                <div class="alert alert-success">
+                    Your message has been sent successfully
+                </div>
+                <?php elseif($sent_status == 'error'): ?>
+                <div class="alert alert-danger">
+                    An unexpected error has occurred. Contact the administrator
+                </div>
+                <?php endif; ?>
+
                 <div class="input-text">
                     <label for="contact-name">Name</label>
                     <input type="text" name="name" id="contact-name" required>

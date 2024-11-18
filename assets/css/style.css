@@ -604,6 +604,35 @@ form *:focus {
 .contact-form .input-text {
     margin-bottom: 20px;
 }
+.alert {
+    position: relative;
+    display: block;
+    color: #fff;
+    padding: 15px;
+    background: #393939;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+.alert::before {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Font Awesome 6 Free';
+}
+.alert-success {
+    background: #177f00;
+}
+.alert-success::before {
+    content: '\f058';
+}
+.alert-danger {
+    background: #7f0000;
+}
+.alert-danger::before {
+    content: '\f057';
+}
 
 footer {
     width: fit-content;
