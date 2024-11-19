@@ -10,15 +10,6 @@ function get_nav_menu() {
         'education',
         'contacts'
     );
-    $navbar = array(
-        "home" => "/",
-        "skills" => "/skills",
-        "favorites" => "/favorites",
-        "projects" => "/projects",
-        "education" => "/education",
-        "contacts" => "/contacts",
-    );
-
 
     ?>
     <nav class="header-nav">

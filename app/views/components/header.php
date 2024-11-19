@@ -54,7 +54,16 @@ include(INCLUDES_PATH . "/header_nav.php");
                         <a href="https://t.me/SteveDekart" target="_blank" rel="nofollow"><i class="fa-brands fa-telegram"></i></a>
                     </li>
                 </ul>
+
+                <div class="header-title mobile"><a href="<?php echo Router::get_url('home') ?>">Stepan Turitsin</a></div>
+
+                <button type="button" class="mobile" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
+        </div>
+        <div class="header-inner__mobile mobile">
+            <?php get_nav_menu(); ?>
         </div>
     </header>
 
