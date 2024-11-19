@@ -1,8 +1,9 @@
 <?php
 namespace App\Controllers;
+require_once CONTROLLER_PATH . '/BaseController.php';
 
-class NotFoundController
-{
+class NotFoundController extends BaseController
+{ 
     public function index()
     {   
         global $current_page;

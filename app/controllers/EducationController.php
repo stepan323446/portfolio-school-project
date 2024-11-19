@@ -1,7 +1,8 @@
 <?php
 namespace App\Controllers;
+require_once CONTROLLER_PATH . '/BaseController.php';
 
-class EducationController
+class EducationController extends BaseController
 {
     public function index()
     {   

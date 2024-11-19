@@ -2,6 +2,14 @@
 function get_nav_menu() {
     global $current_page;
     
+    $navbar_url_names = array(
+        'home',
+        'skills',
+        'favorites',
+        'projects',
+        'education',
+        'contacts'
+    );
     $navbar = array(
         "home" => "/",
         "skills" => "/skills",
@@ -16,13 +24,13 @@ function get_nav_menu() {
     <nav class="header-nav">
         <ul>
             <?php
-            foreach ($navbar as $key => $value):
+            foreach ($navbar_url_names as $name):
             ?>
             <li>
-                <?php if($key == $current_page): ?>
-                    <span><?php echo $key ?></span>
+                <?php if($name == Router::$current_router_name): ?>
+                    <span><?php echo $name ?></span>
                 <?php else: ?>
-                    <a href="<?php echo $value ?>"><?php echo $key ?></a>
+                    <a href="<?php echo Router::get_url($name) ?>"><?php echo $name ?></a>
                 <?php endif; ?>
             </li>
             <?php endforeach; ?>

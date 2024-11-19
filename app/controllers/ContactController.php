@@ -1,10 +1,11 @@
 <?php
 namespace App\Controllers;
+require_once CONTROLLER_PATH . '/BaseController.php';
 
 use TelegramBot;
 
 
-class ContactController
+class ContactController extends BaseController
 {
     public function index()
     {   
