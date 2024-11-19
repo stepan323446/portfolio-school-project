@@ -5,6 +5,7 @@ use App\Controllers\FavoriteController;
 use App\Controllers\HomeController;
 use App\Controllers\NotFoundController;
 use App\Controllers\ProjectsController;
+use App\Controllers\SkillsController;
 
 define('BASE_PATH', __DIR__);
 define('VIEW_PATH', BASE_PATH . '/app/views');
@@ -55,7 +56,15 @@ switch ($requestUri) {
         $controller->index();
         break;
 
+    case '/skills':
+        require CONTROLLER_PATH . '/SkillsController.php';
+        $controller = new SkillsController();
+        $controller->index();
+        break;
+
     default:
+        http_response_code(404);
+
         require CONTROLLER_PATH . '/NotFoundController.php';
         $controller = new NotFoundController();
         $controller->index(); 

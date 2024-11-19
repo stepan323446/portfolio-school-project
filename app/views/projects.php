@@ -2,7 +2,11 @@
     'Projects',
     'A showcase of my projects: web development, apps, and creative tech solutions.',
     '',
-    'projects' ) ?>
+    'projects',
+    [
+        ['robots', 'index, follow'],
+        ['keywords', 'portfolio, web development, programming, projects']
+    ] ) ?>
 
 <div class="container">
     <section class="page-header">

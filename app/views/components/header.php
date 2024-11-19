@@ -13,6 +13,13 @@ include(INCLUDES_PATH . "/header_nav.php");
 
     <meta name="description" content="<?php echo $description ?>">
 
+    <!-- Meta tags -->
+    <meta name="author" content="Stepan Turitsin">
+
+    <?php foreach($meta_tags as $tag): ?>
+<meta name="<?php echo $tag[0] ?>" content="<?php echo $tag[1] ?>">
+    <?php endforeach; ?>
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

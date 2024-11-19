@@ -1,8 +1,12 @@
 <?php get_header(
     'Education',
-    'he educational institutions where I studied played a key role in my development and becoming a professional',
+    'The educational institutions where I studied played a key role in my development and becoming a professional',
     '',
-    'education' ) ?>
+    'education',
+    [
+        ['robots', 'index, follow'],
+        ['keywords', 'portfolio, web development, programming, education, vts']
+    ] ) ?>
 
 <div class="container">
     <section class="page-header">
@@ -27,5 +31,4 @@
         <span class="quote-author">- John Dewey</span>
     </blockquote>
 </div>
-l
 <?php get_footer() ?>

@@ -2,7 +2,11 @@
 <?php get_header(
     "Home", 
     "Software developer with experience in web development and building cross-platform applications. I enjoy creating useful tools and applications that improve everyday life.",
-    "homepage-wrapper ") ?>
+    "homepage-wrapper", 
+    [
+        ['robots', 'index, follow'],
+        ['keywords', 'portfolio, web development, programming']
+    ]) ?>
 
 <div class="container homepage">
     <div class="homepage-info">

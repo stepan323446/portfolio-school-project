@@ -16,7 +16,11 @@
     color: var(--default-text);
 }
 body {
+    height: 100%;
     background: var(--background-color);
+}
+.wrapper  * {
+    box-sizing: border-box;
 }
 .wrapper {
     min-height: calc(100vh - 120px);
@@ -303,6 +307,11 @@ body.contacts {
     --hyperlink-color: #E45AF1;
     --blur-effect-color: #6C3266;
 }
+body.skills {
+    --background-color: linear-gradient(0deg, rgba(31,37,80,1) 0%, rgba(17,17,17,1) 57%, rgba(17,17,17,1) 100%);
+    --hyperlink-color: #75A2F4;
+    --blur-effect-color: #32456C;
+}
 
 /* Forms */
 form *:focus {
@@ -336,7 +345,9 @@ form *:focus {
     resize: vertical;
 }
 .input-text:has(input:focus) label,
-.input-text:has(textarea:focus) label {
+.input-text:has(input:not(:placeholder-shown)) label,
+.input-text:has(textarea:focus) label,
+.input-text:has(textarea:not(:placeholder-shown)) label {
     display: inline-block;
     background: rgba(17,17,17,1);
     top: -10px;
@@ -437,6 +448,7 @@ form *:focus {
     padding: 7px;
     border-radius: 100%;
     background: #4B4B4B;
+    box-sizing: content-box;
     margin-right: 8px
 }
 .skill-item .skill-label {
@@ -632,6 +644,64 @@ form *:focus {
 }
 .alert-danger::before {
     content: '\f057';
+}
+.skills .page-header {
+    margin-bottom: 150px;
+}
+.skills-phrases {
+    text-align: center;
+    margin-bottom: 150px;
+}
+.skills-phrases .phrase {
+    font-size: 38px;
+    margin-bottom: 95px;
+    color: var(--active-text-color);
+}
+.soft-skills {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.soft-skills .item {
+    width: 340px;
+    border-radius: 25px;
+    padding: 22px 28px;
+    background: var(--hyperlink-color);
+}
+.soft-skills .icon {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.soft-skills .name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.soft-skills .item:not(:last-child) {
+    margin-right: 50px;
+}
+.soft-skills .item * {
+    color: #000;
+}
+.skill-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 40px;
+    margin-bottom: 120px;
+}
+.skill-categories h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.skill-categories .cat {
+    padding: 23px 29px;
+    border-radius: 20px;
+    border: 1px solid var(--default-text);
+}
+.skill-categories .skill-item {
+    display: flex;
+    margin-bottom: 10px;
 }
 
 footer {

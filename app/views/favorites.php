@@ -3,7 +3,11 @@
     '
 Here is a collection of all my favorite pages that I visit frequently and rely on for quick access to my most-used sites and resources.',
     '',
-    'favorite-pages' ) ?>
+    'favorite-pages',
+    [
+        ['robots', 'index, follow'],
+        ['keywords', 'portfolio, web development, programming, favorite pages, bookmarks',]
+    ] ) ?>
 
     <div class="container">
         <section class="page-header">

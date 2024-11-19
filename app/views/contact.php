@@ -2,7 +2,11 @@
     'Contacts',
     'Contact me to discuss projects, collaborations, or questions. I will be glad to receive your suggestions and feedback!',
     '',
-    'contacts' ) ?>
+    'contacts',
+    [
+        ['robots', 'index, follow'],
+        ['keywords', 'portfolio, web development, programming, contacts, telegram, email']
+    ] ) ?>
 
     <div class="container">
         <div class="contact-info">
@@ -39,17 +43,17 @@
 
                 <div class="input-text">
                     <label for="contact-name">Name</label>
-                    <input type="text" name="name" id="contact-name" required>
+                    <input type="text" name="name" id="contact-name" required placeholder="">
                 </div>
 
                 <div class="input-text">
                     <label for="contact-email">E-mail</label>
-                    <input type="email" name="email" id="contact-email" required>
+                    <input type="email" name="email" id="contact-email" required placeholder="">
                 </div>
 
                 <div class="input-text">
                     <label for="contact-message">Message</label>
-                    <textarea name="content" rows="4" id="contact-message" required></textarea>
+                    <textarea name="content" rows="4" id="contact-message" required placeholder=""></textarea>
                 </div>
 
                 <button class="btn" type="submit">Send message</button>

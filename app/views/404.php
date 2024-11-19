@@ -2,7 +2,11 @@
     "404", 
     "Page not found.",
     "not-found-wrapper",
-    'not-found') ?>
+    'not-found',
+    [
+        ['robots', 'noindex'],
+        ['keywords', 'portfolio, web development, programming']
+    ]) ?>
 
 <h1>404</h1>
 <h2>Page not found</h2>
