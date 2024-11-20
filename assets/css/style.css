@@ -85,6 +85,7 @@ a:hover i {
 .header-inner {
     display: flex;
     align-items: center;
+    justify-content: center;
     
     background: var(--background-block);
     border-radius: 100px;
