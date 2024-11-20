@@ -8,7 +8,7 @@
         ['keywords', 'portfolio, web development, programming, contacts, telegram, email']
     ] ) ?>
 
-    <div class="container">
+    <div class="container contacts-container">
         <div class="contact-info">
             <section class="page-header">
                 <span class="page-header__effect"></span>
@@ -23,9 +23,14 @@
             <section class="contact-info__links">
                 <h3>Get in Touch</h3>
                 <ul>
-                    <li><i class="fa fa-envelope"></i> Email: <a href="mailto:stevedekart2020@gmail.com">stevedekart2020@gmail.com</a></li>
-                    <li><i class="fa-brands fa-telegram"></i> Telegram: <a href="https://t.me/SteveDekart" target="_blank">@SteveDekart</a></li>
-                    <li><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/stepan-turitsin-009354243/" target="_blank">Stepan Turitsin</a></li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i> Email:</span> <a href="mailto:stevedekart2020@gmail.com">stevedekart2020@gmail.com</a></li>
+                    <li>
+                        <span><i class="fa-brands fa-telegram"></i> Telegram:</span> <a href="https://t.me/SteveDekart" target="_blank">@SteveDekart</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-brands fa-linkedin"></i> LinkedIn:</span> <a href="https://www.linkedin.com/in/stepan-turitsin-009354243/" target="_blank">Stepan Turitsin</a>
+                    </li>
                 </ul>
             </section>
         </div>
