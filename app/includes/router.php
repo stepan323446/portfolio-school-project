@@ -27,7 +27,15 @@ class Router {
     static function display_page() {
         // Get url
         $requestUri = strtok($_SERVER['REQUEST_URI'], '?');
+
+        // Default url
+        $parsedDomainUrl = parse_url(HOME_URL);
+        $defaultDomainPath = $parsedDomainUrl['path'] ?? '';
+        
+        $requestUri = str_replace($defaultDomainPath, '', $requestUri);
         $requestUri = rtrim($requestUri, '/');
+
+        
 
         $request_found = false;
         foreach(self::$routers as $router_name => $router) {
