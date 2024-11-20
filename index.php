@@ -7,11 +7,12 @@ define('MODEL_PATH', BASE_PATH . '/app/models');
 define('CONTROLLER_PATH', BASE_PATH . '/app/controllers');
 define('INCLUDES_PATH', BASE_PATH . '/app/includes');
 define('DATA_PATH', BASE_PATH . '/app/data');
-define('ASSETS_PATH', '/assets');
+
 
 require BASE_PATH . '/functions.php';
 require BASE_PATH . '/config.php';
 
+define('ASSETS_PATH', HOME_URL . '/assets');
 
 date_default_timezone_set(SERVER_TIMEZONE);
 

@@ -9,7 +9,7 @@ include(INCLUDES_PATH . "/header_nav.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stepan Turitsin - <?php echo $title ?></title>
-    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="<?php echo ASSETS_PATH . '/favicon.png' ?>">
 
     <meta name="description" content="<?php echo $description ?>">
 
@@ -27,13 +27,13 @@ include(INCLUDES_PATH . "/header_nav.php");
     <!-- Google fonts/ -->
 
     <!-- Font Awesome -->
-    <link href="/assets/fontawesome-free-6.6.0-web/css/fontawesome.min.css" rel="stylesheet" />
-    <link href="/assets/fontawesome-free-6.6.0-web/css/brands.min.css" rel="stylesheet" />
-    <link href="/assets/fontawesome-free-6.6.0-web/css/solid.min.css" rel="stylesheet" />
+    <link href="<?php echo ASSETS_PATH . '/fontawesome-free-6.6.0-web/css/fontawesome.min.css' ?>" rel="stylesheet" />
+    <link href="<?php echo ASSETS_PATH . '/fontawesome-free-6.6.0-web/css/brands.min.css' ?>" rel="stylesheet" />
+    <link href="<?php echo ASSETS_PATH . '/fontawesome-free-6.6.0-web/css/solid.min.css' ?>" rel="stylesheet" />
     <!-- Font Awesome/ -->
 
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo ASSETS_PATH . '/css/reset.css' ?>">
+    <link rel="stylesheet" href="<?php echo ASSETS_PATH . '/css/style.css' ?>">
 </head>
 <body class="<?php echo $body_class ?>">
     <header class="header">
