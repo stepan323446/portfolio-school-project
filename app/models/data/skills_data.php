@@ -70,7 +70,7 @@ $skills = array(
     ),
     "asp" => new SkillModel(
         "ASP.NET",
-        SKILL_ICON . "asp.png",
+        SKILL_ICON . "/asp.png",
         "Backend"
     ),
 
