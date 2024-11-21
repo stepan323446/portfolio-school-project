@@ -18,12 +18,12 @@
         </div>
 
         <div class="homepage-btn__wrapper">
-            <a href="#" class="btn">Download CV</a>
+            <a href="<?php echo CV_URL ?>" target="_blank" class="btn">Download CV</a>
             <span><?php echo date('Y.m.d H:i:s'); ?></span>
         </div>
     </div>
     <div class="homepage-photo image">
-        <img src="assets/images/my_photo.png" alt="">
+        <img src="<?php echo ASSETS_PATH . '/images/my_photo.png' ?>" alt="">
     </div>
 </div>
 
