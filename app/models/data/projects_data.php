@@ -58,6 +58,24 @@ EOT,
         [$skills["python"]],
         "https://github.com/stepan323446/music-search-bot",
         "https://t.me/steve_dekart_music_search_bot"
+    ),
+    new ProjectModel(
+        "PortalVirtualReality",
+        <<<EOT
+A gaming website built on the WordPress platform with a custom theme and a variety of unique features. Developed for portalvirtualreality.ru.
+<br>
+<ul>
+    <li>Custom theme with flexible customization and responsive design. Developed from scratch, including unique Gutenberg blocks and plugins.</li>
+    <li>Custom Gutenberg blocks, such as: promo codes (and shortcodes), item characteristics blocks, tier lists, external files for Gutenberg via React.</li>
+    <li>Custom post types, including: Games, Quiz, Movies, Items, Achievements.</li>
+</ul>
+<br>
+Includes custom plugins, such as a parser for automatic content population using cron (demo version of the parser is disabled).
+EOT,
+        PROJECTS_THUMB . "/pvr.png",
+        [$skills["html"], $skills["php"], $skills["css"], $skills["javascript"], $skills["wordpress"], $skills["mysql"]],
+        null,
+        "https://pvr.steve-dekart.xyz/"
     )
 );
 
