@@ -11,7 +11,7 @@ class ContactController extends BaseController
     {   
         global $current_page;
 
-        if(isset($_POST["name"]) && $_POST["email"] && $_POST["content"]) {
+        if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["content"])) {
             require_once INCLUDES_PATH . "/telegram_api.php";
 
             $message_name = $_POST["name"];
